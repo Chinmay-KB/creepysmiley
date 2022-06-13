@@ -1,6 +1,6 @@
 
 # Creepy Smiley
-Do you get sick in your stomach when you see the 🙂 emoji? How much of that sly smile is creepy? Let's vote!
+Do you get sick in your stomach when you see the 🙂 emoji? How much of that sly smile is creepy? [Let's vote!](https://baigana.web.app/)
 
 ![Creepy Smiley Banner](https://github.com/Chinmay-KB/creepysmiley/blob/main/images/cover.png)
 Creepy Smiley is a simple website where you can change parameters of the smiley and vote on which smiley you find the creepiest 🙂.
