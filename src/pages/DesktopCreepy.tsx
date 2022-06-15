@@ -19,9 +19,11 @@ export const App = () => {
           flexDirection: "column",
           justifyContent: "center",
           padding: "1rem 4rem",
+          marginBottom: "4rem",
         }}
       >
         <CreepyDesc />
+        <Box h={2} />
         <SliderPack alignItems="start" spacing="5" />
       </Box>
     </Box>

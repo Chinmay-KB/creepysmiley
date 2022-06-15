@@ -17,7 +17,7 @@ interface Creepy {
 }
 
 const submitVote = (vote: Creepy, user: User, toast: any) => {
-  setDoc(doc(creepiesRef, user.email ?? "rand"), {
+  setDoc(doc(creepiesRef, user.uid ?? "rand"), {
     smileAngle: vote?.smileAngle,
     smileDistance: vote?.smileDistance,
     eyeRadius: vote?.eyeRadius,

@@ -17,7 +17,7 @@ interface PropSliderProps {
 export const PropSlider: FC<PropSliderProps> = (props) => {
   return (
     <>
-      <Text>{props.title}</Text>
+      <Text fontWeight={600}>{props.title}</Text>
       <Slider
         aria-label={props.title}
         defaultValue={props.default}

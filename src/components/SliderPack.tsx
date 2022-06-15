@@ -1,10 +1,11 @@
-import { StackProps, VStack } from "@chakra-ui/layout";
-import { Button, useToast } from "@chakra-ui/react";
+import { Box, StackProps, VStack } from "@chakra-ui/layout";
+import { Button, Icon, useToast } from "@chakra-ui/react";
 import { getAuth } from "@firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { app, Creepy, submitVote } from "../db/db";
 import { useCanvas } from "../hooks/useCanvas";
+import { GoogleIcon } from "../icons/GoogleIcon";
 import { PropSlider } from "./PropSlider";
 
 export const SliderPack = (props: StackProps) => {
@@ -53,7 +54,12 @@ export const SliderPack = (props: StackProps) => {
         title={"Change Eye Radius"}
       />
       {user === undefined ? (
-        <Button onClick={() => signInWithGoogle()}>Login with Google</Button>
+        <Button onClick={() => signInWithGoogle()}>
+          Login with{" "}
+          <Box paddingLeft={1}>
+            <GoogleIcon />
+          </Box>
+        </Button>
       ) : (
         <Button
           onClick={() => {
