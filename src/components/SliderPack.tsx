@@ -56,9 +56,10 @@ export const SliderPack = (props: StackProps) => {
       {user === undefined ? (
         <Button onClick={() => signInWithGoogle()}>
           Login with{" "}
-          <Box paddingLeft={1}>
+          <Box paddingLeft={1} paddingRight={1}>
             <GoogleIcon />
           </Box>
+          to vote
         </Button>
       ) : (
         <Button

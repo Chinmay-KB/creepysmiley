@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
+import { getAggregateData } from "../db/db";
 
 interface CreepyCanvasProps {
   size: number;
@@ -8,6 +9,13 @@ export const CreepyCanvas: FC<CreepyCanvasProps> = (props) => {
   const [smileAngle, setSmileAngle] = useState(Math.PI / 4);
   const [smileDistance, setSmileDistance] = useState(0.2 * props.size);
   const [eyeRadius, setEyeRadius] = useState((30 / 500) * props.size);
+  useEffect(() => {
+    getAggregateData().then((data) => {
+      setSmileAngle(data.smileAngle);
+      setSmileDistance(data.smileDistance);
+      setEyeRadius(data.eyeRadius);
+    });
+  }, []);
   useEffect(() => {
     var c = document.getElementById("myCanvas") as HTMLCanvasElement;
     var ctx = c.getContext("2d");
