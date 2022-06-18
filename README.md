@@ -1,5 +1,7 @@
 # Creepy Smiley
 
+NOTE: We're on [ProductHunt](https://www.producthunt.com/posts/creepy-smiley)🙂🙂🙂.
+
 Do you get sick in your stomach when you see the 🙂 emoji? How much of that sly smile is creepy? [Let's vote!](https://creepysmiley.art/)
 
 ![Creepy Smiley Banner](https://github.com/Chinmay-KB/creepysmiley/blob/main/images/cover.png)
